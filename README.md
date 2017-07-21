@@ -15,7 +15,7 @@ end
 Ou, se for uma biblioteca Ruby, adicione ao gemspec:
 
 ```ruby
-spec.add_development_dependency 'percy-style'
+spec.add_development_dependency 'wonder-ruby-style'
 ```
 
 E então execute:
