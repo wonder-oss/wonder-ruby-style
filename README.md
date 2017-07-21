@@ -1,39 +1,43 @@
-# Wonder::Ruby::Style
+# Wonder-Ruby-Style
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/wonder/ruby/style`. To experiment with that code, run `bin/console` for an interactive prompt.
+WonderRubyStyle é uma gem que facilita o compartilhamento de configurações do Rubocop entre os projetos de Ruby.
 
-TODO: Delete this and the text above, and describe your gem
+## Instalação
 
-## Installation
-
-Add this line to your application's Gemfile:
+Adicione essa linha ao Gemfile do seu app:
 
 ```ruby
-gem 'wonder-ruby-style'
+group :test, :development do
+  gem 'wonder-ruby-style'
+end
 ```
 
-And then execute:
+Ou, se for uma biblioteca Ruby, adicione ao gemspec:
 
-    $ bundle
+```ruby
+spec.add_development_dependency 'percy-style'
+```
 
-Or install it yourself as:
+E então execute:
 
-    $ gem install wonder-ruby-style
+```bash
+$ bundle install
+```
 
-## Usage
+## Uso
 
-TODO: Write usage instructions here
+Crie um arquivo `.rubocop.yml` com as seguintes diretivas:
 
-## Development
+```yaml
+inherit_gem:
+  wonder-ruby-style:
+    - default.yml
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+E então execute:
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```bash
+$ bundle exec rubocop
+```
 
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/wonder-ruby-style. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## Code of Conduct
-
-Everyone interacting in the Wonder::Ruby::Style project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/wonder-ruby-style/blob/master/CODE_OF_CONDUCT.md).
+Não é necessário incluir a gem rubocop nas dependências da sua aplicação.
