@@ -49,6 +49,12 @@ prepare:
   fetch:
   - url: "https://raw.githubusercontent.com/wondersistemas/wonder-ruby-style/master/.rubocop.yml"
     path: ".rubocop.yml"
+
+# necessário também alterar a versão do rubocop para 0.49.1
+engines:
+  rubocop:
+    enabled: true
+    channel: rubocop-0-49-1
 ```
 
 O serviço então irá baixar e reescrever o arquivo `.rubocop.yml` com o conteúdo da url.
