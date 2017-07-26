@@ -40,4 +40,17 @@ E então execute:
 $ bundle exec rubocop
 ```
 
+# CodeClimate
+
+Para manter compatibilidade com o serviço do CodeClimate é necessário adicionar uma regra ao arquivo `.codeclimate.yml`.
+
+```yaml
+prepare:
+  fetch:
+  - url: "https://raw.githubusercontent.com/wondersistemas/wonder-ruby-style/master/.rubocop.yml"
+    path: ".rubocop.yml"
+```
+
+O serviço então irá baixar e reescrever o arquivo `.rubocop.yml` com o conteúdo da url.
+
 Não é necessário incluir a gem rubocop nas dependências da sua aplicação.

@@ -5,7 +5,7 @@ AllCops:
     - Rakefile
     - lib/**/*.rake
   DisabledByDefault:                         true
-  TargetRubyVersion:                         2.4.1
+  TargetRubyVersion:                         2.4
   Exclude:
     - '*.gemspec'
     - 'coverage/**/*'
