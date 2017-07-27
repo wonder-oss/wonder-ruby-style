@@ -765,13 +765,6 @@ Layout/MultilineOperationIndentation:
                  one line.
   Enabled:                                   true
 
-Style/MultilineTernaryOperator:
-  Description:                               >-
-                 Avoid multi-line ?:         (the ternary operator);
-                 use if/unless instead.
-  StyleGuide:                                'https://github.com/bbatsov/ruby-style-guide#no-multiline-ternary'
-  Enabled:                                   true
-
 Style/NegatedIf:
   Description:                               >-
                  Favor unless over if for negative conditions
