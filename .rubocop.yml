@@ -13,6 +13,7 @@ AllCops:
     - 'spec/fixtures/**/*'
     - 'tmp/**/*'
     - 'vendor/**/*'
+    - 'lib/datasource_config.rb'
 
 #################### Lint ################################
 
