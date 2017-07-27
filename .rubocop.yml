@@ -29,11 +29,6 @@ Lint/AmbiguousRegexpLiteral:
                  a method invocation without parenthesis.
   Enabled:                                   true
 
-Lint/AmbiguousBlockAssociation:
-  Enabled:                                   true
-  Exclude:
-    - 'spec/**/*.rb'
-
 Lint/AssignmentInCondition:
   Description:                               "Don't use assignment in conditions."
   StyleGuide:                                'https://github.com/bbatsov/ruby-style-guide#safe-assignment-in-condition'
