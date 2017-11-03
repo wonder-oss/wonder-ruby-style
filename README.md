@@ -1,6 +1,8 @@
 # Wonder-Ruby-Style
 
-WonderRubyStyle é uma gem que facilita o compartilhamento de configurações do Rubocop entre os projetos de Ruby.
+> WonderRubyStyle é uma gem que facilita o compartilhamento de configurações do Rubocop entre os projetos de Ruby.
+
+[![Gem Version](https://badge.fury.io/rb/wonder-ruby-style.svg)](https://badge.fury.io/rb/wonder-ruby-style)
 
 ## Instalação
 
@@ -31,7 +33,7 @@ Crie um arquivo `.rubocop.yml` com as seguintes diretivas:
 ```yaml
 inherit_gem:
   wonder-ruby-style:
-    - default.yml
+    - default.yml # ou presets/VERSAO_RUBOCOP
 ```
 
 E então execute:
@@ -50,13 +52,13 @@ prepare:
   - url: "https://raw.githubusercontent.com/wondersistemas/wonder-ruby-style/master/.rubocop.yml"
     path: ".rubocop.yml"
 
-# necessário também alterar a versão do rubocop para 0.49.1
+# necessário também alterar a versão do rubocop para a versão utilizada
 engines:
   rubocop:
     enabled: true
-    channel: rubocop-0-49-1
+    channel: rubocop-0-50-0
 ```
 
-O serviço então irá baixar e reescrever o arquivo `.rubocop.yml` com o conteúdo da url.
+O serviço então irá baixar e reescrever o arquivo `.rubocop.yml` com o conteúdo da url, antes de executar a verificação.
 
-Não é necessário incluir a gem rubocop nas dependências da sua aplicação.
+Não é necessário incluir a gem rubocop nas dependências da sua aplicação, apenas se você deseja forçar uma versão específica da gem.
