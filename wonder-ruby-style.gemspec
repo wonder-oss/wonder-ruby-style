@@ -1,4 +1,4 @@
-# coding: utf-8
+# encoding: utf-8
 
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
@@ -11,7 +11,8 @@ Gem::Specification.new do |spec|
   spec.email         = ['wonder@wonder.com.br']
 
   spec.summary       = 'Compartilhamento de configurações do Rubocop entre os projetos de Ruby.'
-  spec.homepage      = 'http://www.wonder.com.br'
+  spec.homepage      = 'https://github.com/wondersistemas/wonder-ruby-style'
+  spec.license       = 'MIT'
 
   if spec.respond_to?(:metadata)
     spec.metadata['allowed_push_host'] = 'https://rubygems.org'
