@@ -29,7 +29,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'rubocop', Wonder::Ruby::Style::VERSION
-  spec.add_dependency 'rubocop-rspec', '~> 1.15'
+  spec.add_dependency 'rubocop-rspec'
+  spec.add_dependency 'rubocop-rails'
+  spec.add_dependency 'rubocop-performance'
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake'
 end
