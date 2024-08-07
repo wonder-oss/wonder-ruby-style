@@ -5,14 +5,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'wonder/ruby/style/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'wonder-ruby-style'
-  spec.version       = Wonder::Ruby::Style::VERSION
-  spec.authors       = ['Wonder Sistemas']
-  spec.email         = ['wonder@wonder.com.br']
-
-  spec.summary       = 'Compartilhamento de configurações do Rubocop entre os projetos de Ruby.'
-  spec.homepage      = 'https://github.com/wondersistemas/wonder-ruby-style'
-  spec.license       = 'MIT'
+  spec.name                  = 'wonder-ruby-style'
+  spec.version               = Wonder::Ruby::Style::VERSION
+  spec.authors               = ['Wonder Sistemas']
+  spec.email                 = ['wonder@wonder.com.br']
+  spec.summary               = 'Compartilhamento de configurações do Rubocop entre os projetos de Ruby.'
+  spec.homepage              = 'https://github.com/wondersistemas/wonder-ruby-style'
+  spec.license               = 'MIT'
+  spec.required_ruby_version = '>= 2.7.0'
 
   if spec.respond_to?(:metadata)
     spec.metadata['allowed_push_host'] = 'https://rubygems.org'
