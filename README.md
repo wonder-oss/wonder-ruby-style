@@ -4,6 +4,9 @@
 
 [![Gem Version](https://badge.fury.io/rb/wonder-ruby-style.svg)](https://badge.fury.io/rb/wonder-ruby-style)
 
+> [!IMPORTANT]
+> Versão atual (fora do ruby-gems): `1.65.1` 
+
 ## Instalação
 
 Adicione essa linha ao Gemfile do seu app:
